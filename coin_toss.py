@@ -1,6 +1,6 @@
 import random
- 
-N = 10
+
+N = int(raw_input())
 c = 0
 
 check = []
@@ -13,7 +13,7 @@ for j in range(N):
 	    head = random.random() >= 0.5
 	    if head:
 	        c += 1
-	check[c] += 1
+	check[c]+=1
 	c = 0
 
 for i in range(N+1):
