@@ -1,12 +1,12 @@
 import random
 
-N = int(raw_input())
+N = int(raw_input('number of toss: '))
 c = 0
 
 check = []
 
 for i in range(N+1):
-	check.append(0.0`)
+	check.append(0.0)
 
 for j in range(N):
 	for i in range(N):
