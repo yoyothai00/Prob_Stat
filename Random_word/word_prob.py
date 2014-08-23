@@ -8,14 +8,9 @@ count = 0
 # alph = raw_input('alphabet: ')
 for i in range(len(line)):
 	word = list(line[i])
-	temp_count = 0
 	for j in range(len(word)):
-		if 'a' == word[j]:
-			temp_count += 1
-		
-	if temp_count >= 1:
-		count +=1
-
+		if 'a' == word[j] or 'b' == word[j]:
+			count += 1
 
 prob = float(count)/len(line)
 print 'prob:',prob
