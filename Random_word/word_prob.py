@@ -9,11 +9,10 @@ count = 0
 alph = raw_input('alphabet: ')
 
 for i in range(len(line)):
-	word = list(line[i])
-	for j in range(len(word)):
-		if alph == word[j]:
-			count += 1
-			break
+	word = line[i].split()
+	check = line[i].split(alph)
+	if len(word) != len(check):
+		count += 1
 
 prob = float(count)/len(line)
 print 'prob:',prob
